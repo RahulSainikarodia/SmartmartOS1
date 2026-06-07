@@ -1,0 +1,20 @@
+{
+  "name": "new-folder-(3)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "server": "npm run dev --prefix backend",
+    "client": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && npm install --prefix backend && npm install --prefix frontend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "concurrently": "^9.2.1",
+    "mongodb": "^6.21.0",
+    "ws": "^8.21.0"
+  }
+}
