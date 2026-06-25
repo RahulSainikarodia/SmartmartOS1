@@ -11,13 +11,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Change the link to look exactly like this:
-fetch(`https://onrender.com`, {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify(userData)
-});
-
 
 // Routes
 app.use('/api/users', require('./routes/userRoutes'));
