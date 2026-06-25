@@ -16,9 +16,6 @@ export const login = (formData) => API.post('/users/login', formData);
 export const register = (formData) => API.post('/users', formData);
 export const fetchOwnersByArea = (area) => API.get(`/users/owners/${area}`);
 
-
-
-
 export const fetchProducts = (ownerId) => API.get('/products', { params: { ownerId } });
 export const createProduct = (productData) => API.post('/products', productData);
 export const updateProduct = (id, productData) => API.put(`/products/${id}`, productData);
