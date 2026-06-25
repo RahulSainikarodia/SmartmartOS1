@@ -16,12 +16,7 @@ export const login = (formData) => API.post('/users/login', formData);
 export const register = (formData) => API.post('/users', formData);
 export const fetchOwnersByArea = (area) => API.get(`/users/owners/${area}`);
 
-// Change the link to look exactly like this:
-fetch(`https://smartmartos1.onrender.com`, {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify(userData)
-});
+
 
 
 export const fetchProducts = (ownerId) => API.get('/products', { params: { ownerId } });
